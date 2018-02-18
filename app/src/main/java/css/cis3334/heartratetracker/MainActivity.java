@@ -37,6 +37,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
                 HeartRate hr = (HeartRate) parent.getItemAtPosition(position);
+
+
+                //Unit 5 Asgn #4 - Matt Goodson - Set Colors using colors.xml
+
+                if (hr.getRangeName()=="Resting")
+                    tvSelect.setBackgroundColor(getResources().getColor(R.color.colorResting));
+                 else if (hr.getRangeName()=="Moderate")
+                    tvSelect.setBackgroundColor(getResources().getColor(R.color.colorModerate));
+                 else if (hr.getRangeName()=="Endurance")
+                    tvSelect.setBackgroundColor(getResources().getColor(R.color.colorEndurance));
+                 else if (hr.getRangeName()=="Aerobic")
+                    tvSelect.setBackgroundColor(getResources().getColor(R.color.colorAerobic));
+                 else if (hr.getRangeName()=="Anaerobic")
+                    tvSelect.setBackgroundColor(getResources().getColor(R.color.colorAnaerobic));
+                 else tvSelect.setBackgroundColor(getResources().getColor(R.color.colorRedZone));
+
                 tvSelect.setText("You selected: " + hr.toString());
             }
         });

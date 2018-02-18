@@ -15,7 +15,8 @@
         android:id="@+id/textViewSelect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select a Heart Rate" />
+        android:text="Select a Heart Rate"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium" />
 
     <ListView
         android:id="@+id/listViewHeartRate"

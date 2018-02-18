@@ -70,7 +70,10 @@ public class HeartRate {
     }
 
     @Override
+    //Unit 5 Asgn #2 - Matt Goodson - Display Range Name (this step was already done in the code downloaded)
+    //Unit 5 Asgn #3 - Matt Goodson - Display Range Description
     public String toString() {
-        return "HeartRate = " + pulse + " - " + getRangeName();
+        return "HeartRate = " + pulse + " - " + getRangeName() +" - " + getRangeDescrtiption();
+
     }
 }
